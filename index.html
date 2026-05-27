@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThinkEzly - Never Miss A Call</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom styles for range sliders to look like the screenshots */
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #1071E5;
+      cursor: pointer;
+    }
+    input[type="range"]::-moz-range-thumb {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #1071E5;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 min-h-screen">
+
+  <header class="bg-white border-b border-slate-100 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center space-x-1 font-black text-2xl tracking-tight">
+        <span class="text-[#F17329]">Think</span>
+        <span class="text-[#1071E5] flex items-center">
+          Ezly<span class="inline-block text-xl mx-px">📌</span>
+        </span>
+      </div>
+
+      <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
+        <a href="#examples" class="hover:text-blue-600 transition">Examples</a>
+        <a href="#features" class="hover:text-blue-600 transition">Features</a>
+        <a href="#pricing" class="hover:text-blue-600 transition">Pricing</a>
+      </nav>
+
+      <a href="tel:8334051540" class="border-2 border-[#F17329] text-slate-800 px-5 py-2 rounded-full font-bold text-sm hover:bg-orange-50 transition flex flex-col items-center leading-tight">
+        <span class="text-xs text-slate-500 font-semibold flex items-center gap-1">
+          Click to speak to AI 📞
+        </span>
+        <span>(833) 405-1540</span>
+      </a>
+    </div>
+  </header>
+
+  <section class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-12 gap-12 items-center">
+    <div class="md:col-span-5 space-y-6">
+      <h1 class="text-4xl lg:text-5xl font-black tracking-tight leading-tight">
+        Never Miss A Call <br>or Lead Again with <br>
+        <span class="text-[#1071E5]">AI Employees</span>
+      </h1>
+      <p class="text-lg text-slate-600 leading-relaxed">
+        Turn your business into a 24/7 profit-generating machine with AI employees that qualify leads, schedule appointments, manage customer service and more!
+      </p>
+    </div>
+
+    <div class="md:col-span-7 relative bg-slate-900 rounded-xl overflow-hidden shadow-2xl">
+      <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1000&q=80" alt="AI Employee Interface" class="w-full h-[400px] object-cover opacity-80">
+      <div class="absolute top-4 left-4 bg-black/50 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm font-semibold flex items-center gap-1 cursor-pointer">
+        <span>🔇</span> Enable sound
+      </div>
+      
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-8 space-y-4">
+        <div class="flex items-center space-x-3 text-white font-bold text-lg md:text-xl">
+          <span class="bg-emerald-500 text-white p-1 rounded-full text-sm">✓</span>
+          <span>ANSWERS 100% OF YOUR INBOUND CALLS</span>
+        </div>
+        <div class="flex items-center space-x-3 text-white font-bold text-lg md:text-xl">
+          <span class="bg-emerald-500 text-white p-1 rounded-full text-sm">✓</span>
+          <span>FILTERS OUT THE SPAM</span>
+        </div>
+        <div class="flex items-center space-x-3 text-white font-bold text-lg md:text-xl">
+          <span class="bg-emerald-500 text-white p-1 rounded-full text-sm">✓</span>
+          <span>CONVERTS EVERYONE INTO LEAD</span>
+        </div>
+      </div>
+      
+      <div class="absolute bottom-4 right-4 bg-black/60 text-white text-xs px-2 py-0.5 rounded">
+        1.00
+      </div>
+    </div>
+  </section>
+
+
+  <section id="examples" class="bg-slate-100/60 py-20 border-t border-b border-slate-200/50">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-black">
+        An <span class="text-[#1071E5]">AI Receptionist</span> For Any Business!
+      </h2>
+      <p class="text-slate-500 mt-2 font-medium">
+        <span class="underline cursor-pointer hover:text-slate-700">Listen to the examples below.</span> The possibilities are endless!
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8 mt-12">
+        
+        <div class="bg-white rounded-xl overflow-hidden shadow-md flex flex-col text-left">
+          <div class="relative h-64 bg-black">
+            <video controls preload="metadata" class="w-full h-full object-cover">
+              <source src="Assets/Bakery.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="p-5">
+            <h3 class="text-[#1071E5] font-black text-2xl">Bakery</h3>
+            <p class="text-slate-400 text-sm mt-1">Local Business Example</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl overflow-hidden shadow-md flex flex-col text-left">
+          <div class="relative h-64 bg-black">
+            <video controls preload="metadata" class="w-full h-full object-cover">
+              <source src="Assets/HVAC.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="p-5">
+            <h3 class="text-[#1071E5] font-black text-2xl">HVAC</h3>
+            <p class="text-slate-400 text-sm mt-1">Home Services Example</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl overflow-hidden shadow-md flex flex-col text-left">
+          <div class="relative h-64 bg-black">
+            <video controls preload="metadata" class="w-full h-full object-cover">
+              <source src="Assets/Optical%20Shop.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="p-5">
+            <h3 class="text-[#1071E5] font-black text-2xl">Optical Shop</h3>
+            <p class="text-slate-400 text-sm mt-1">Professional Services Example</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-[#1071E5] py-20 text-white">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-5xl font-bold tracking-tight">Calculate Your Missed Revenue</h2>
+      <p class="text-blue-100 mt-4 text-lg">
+        Every missed call could be a missed customer. <br>See how much money is slipping through the cracks.
+      </p>
+
+      <div class="mt-12 bg-white text-slate-800 rounded-2xl shadow-xl p-6 md:p-10 grid md:grid-cols-12 gap-8 text-left">
+        
+        <div class="md:col-span-6 space-y-8">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="font-bold text-slate-700 flex items-center gap-2">
+                📞 Missed Calls Per Week
+              </label>
+              <span id="callsBadge" class="bg-blue-50 text-[#1071E5] font-bold px-3 py-1 rounded text-sm">
+                20
+              </span>
+            </div>
+            <input 
+              id="missedCallsInput" 
+              type="range" min="0" max="300" value="20" 
+              class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#1071E5]"
+            >
+            <div class="flex justify-between text-xs text-slate-400 mt-1">
+              <span>0</span>
+              <span>300</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-2">
+              Businesses miss 28%–62%+ of inbound calls (National Average).
+            </p>
+          </div>
+
+          <div>
+            <label class="block font-bold text-slate-700 mb-2">
+              💲 Average Sale Value
+            </label>
+            <div class="relative rounded-md shadow-sm">
+              <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                $
+              </div>
+              <input
+                id="averageSaleInput"
+                type="number" value="300"
+                class="w-full pl-8 pr-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 font-medium"
+              >
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="font-bold text-slate-700 flex items-center gap-1">
+                % Close Rate <span class="text-slate-300 text-xs cursor-help">ⓘ</span>
+              </label>
+              <span id="rateBadge" class="bg-blue-50 text-[#1071E5] font-bold px-3 py-1 rounded text-sm">
+                30%
+              </span>
+            </div>
+            <input 
+              id="closeRateInput" 
+              type="range" min="1" max="100" value="30" 
+              class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#1071E5]"
+            >
+            <div class="flex justify-between text-xs text-slate-400 mt-1">
+              <span>1%</span>
+              <span>100%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-6 bg-slate-50/80 rounded-xl p-6 flex flex-col justify-between border border-slate-100 text-center">
+          <div class="py-6">
+            <div class="text-red-400 text-2xl mb-2">📉</div>
+            <h3 class="text-lg font-bold text-slate-700">Revenue Going to Your Competition</h3>
+            <div id="yearlyMissedText" class="text-4xl md:text-6xl font-black text-[#1071E5] my-3">
+              $93,600
+            </div>
+            <p class="text-sm text-slate-400 font-medium">Per Year in Missed Calls</p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 pt-4 border-t border-slate-200">
+            <div class="bg-white p-3 rounded-lg border border-slate-100">
+              <p class="text-xs text-slate-400 font-semibold uppercase">Weekly Missed</p>
+              <p id="weeklyMissedText" class="text-xl font-bold text-slate-800">$1,800</p>
+            </div>
+            <div class="bg-white p-3 rounded-lg border border-slate-100">
+              <p class="text-xs text-slate-400 font-semibold uppercase">Monthly Missed</p>
+              <p id="monthlyMissedText" class="text-xl font-bold text-slate-800">$7,794</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="features" class="py-20 max-w-7xl mx-auto px-6">
+    <div class="text-center space-y-3">
+      <h2 class="text-3xl md:text-4xl font-black flex items-center justify-center gap-2">
+        Why Use <span class="text-[#F17329]">Think</span><span class="text-[#1071E5]">Ezly</span>
+      </h2>
+      <p class="text-slate-600 font-bold max-w-2xl mx-auto text-sm md:text-base">
+        Speed to Lead Drives Sales, and Reviews Close the Loop— <br>
+        <span class="text-slate-400 font-medium text-sm">Faster Responses Convert Customers, and Their Feedback Fuels Future Growth</span>
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 mt-16">
+      
+      <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 relative pt-12">
+        <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-white w-12 h-12 rounded-full border border-slate-100 shadow flex items-center justify-center text-xl">
+          📍
+        </div>
+        <h3 class="text-lg font-black text-center mb-6">
+          Missed Calls = <span class="text-[#1071E5]">Lost Revenue</span>
+        </h3>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>
+            <strong class="text-[#1071E5]">67% of customers hang up</strong> if they don't receive immediate assistance when calling.
+          </p>
+          <p>
+            <strong class="text-[#1071E5]">85% of missed calls never call back.</strong> That's business slipping through your fingers.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 relative pt-12">
+        <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-white w-12 h-12 rounded-full border border-slate-100 shadow flex items-center justify-center text-xl">
+          📍
+        </div>
+        <h3 class="text-lg font-black text-center mb-6">
+          More Conversations = <span class="text-[#1071E5]">Sales</span>
+        </h3>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>
+            <strong class="text-[#1071E5]">92% of customer interactions</strong> happen over the phone. Can you afford to miss even one?
+          </p>
+          <p>
+            <strong class="text-[#1071E5]">60% of customers prefer</strong> speaking to a representative over leaving a voicemail.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 relative pt-12">
+        <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-white w-12 h-12 rounded-full border border-slate-100 shadow flex items-center justify-center text-xl">
+          📍
+        </div>
+        <h3 class="text-lg font-black text-center mb-6">
+          Reviews = <span class="text-[#1071E5]">Trust + More Sales</span>
+        </h3>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>
+            <strong class="text-[#1071E5]">93% of people read online reviews</strong> before making a purchase decision.
+          </p>
+          <p>
+            <strong class="text-[#1071E5]">89% of consumers read</strong> a business's response to reviews when evaluating if they trust a business, especially when handling negative feedback.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="pricing" class="bg-white py-16 border-t border-slate-100">
+    <div class="max-w-4xl mx-auto px-6 text-center space-y-12">
+      
+      <div class="space-y-2">
+        <h3 class="text-3xl font-black">
+          Have a <span class="text-[#1071E5]">Question?</span>
+        </h3>
+        <p class="text-xl font-bold text-slate-800">
+          Click the Chat Bubble <span class="text-[#1071E5]">(bottom right)</span> <br>
+          and ask Ashley, our AI Chat employee 👇
+        </p>
+      </div>
+
+      <div class="bg-gradient-to-r from-[#1071E5] to-[#1d82fc] rounded-3xl p-8 md:p-12 text-white shadow-xl flex flex-col items-center justify-center space-y-6 relative overflow-hidden">
+        <p class="text-base md:text-lg font-medium uppercase tracking-wider text-blue-100">
+          Let ThinkEzly work for your business 24/7
+        </p>
+        <h4 class="text-3xl md:text-5xl font-black tracking-tight">
+          Plans Start at $397/month
+        </h4>
+        
+        <button class="bg-[#F17329] hover:bg-orange-600 text-white font-bold px-8 py-3.5 rounded-full shadow-lg transition transform hover:-translate-y-0.5 flex items-center gap-2 text-base">
+          Let's do this ➔
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end space-y-2">
+    <div class="bg-white px-3 py-1.5 rounded-lg shadow-md text-xs font-bold border border-slate-100 animate-bounce">
+      Chat with Ashley! 👋
+    </div>
+    <button class="w-14 h-14 bg-[#1071E5] text-white rounded-full flex items-center justify-center text-2xl shadow-xl hover:scale-105 transition">
+      💬
+    </button>
+  </div>
+
+  <script>
+    const missedCallsInput = document.getElementById('missedCallsInput');
+    const averageSaleInput = document.getElementById('averageSaleInput');
+    const closeRateInput = document.getElementById('closeRateInput');
+
+    const callsBadge = document.getElementById('callsBadge');
+    const rateBadge = document.getElementById('rateBadge');
+
+    const weeklyMissedText = document.getElementById('weeklyMissedText');
+    const monthlyMissedText = document.getElementById('monthlyMissedText');
+    const yearlyMissedText = document.getElementById('yearlyMissedText');
+
+    function calculateRevenue() {
+      const missedCalls = Number(missedCallsInput.value);
+      const averageSale = Number(averageSaleInput.value);
+      const closeRate = Number(closeRateInput.value);
+
+      // Update Slider Badges dynamically
+      callsBadge.textContent = missedCalls;
+      rateBadge.textContent = closeRate + '%';
+
+      // Formula Math Engine
+      const weekly = missedCalls * averageSale * (closeRate / 100);
+      const yearly = weekly * 52;
+      const monthly = yearly / 12;
+
+      // Update text output numbers beautifully formatted
+      weeklyMissedText.textContent = '$' + Math.round(weekly).toLocaleString();
+      monthlyMissedText.textContent = '$' + Math.round(monthly).toLocaleString();
+      yearlyMissedText.textContent = '$' + Math.round(yearly).toLocaleString();
+    }
+
+    // Attach Event Listeners to recalculate instantly on manipulation
+    missedCallsInput.addEventListener('input', calculateRevenue);
+    averageSaleInput.addEventListener('input', calculateRevenue);
+    closeRateInput.addEventListener('input', calculateRevenue);
+
+    // Run calculation once during execution init
+    calculateRevenue();
+  </script>
+</body>
+</html>
